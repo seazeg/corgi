@@ -12,6 +12,6 @@ npm i pnpm -g
 
 ## 快捷菜单
 
--   [WY CLI](/docs/corgi-core.html)
--   [H5 脚手架](/docs/template-node-egg.html)
--   [Vue 脚手架](/docs/template-vue2-manage.html)
+- [Corgi集中管理工具](/docs/corgi-core.html)
+- [H5模板使用文档](/docs/template-h5.html)
+- [Vue模板使用文档](/docs/template-vue.html)

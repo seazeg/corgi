@@ -24,9 +24,10 @@ npm i corgi-biu -g
 ◯ Vue（Vue.js 3.x + Vue Router + vite + axios + less + pinia + ant-design-vue）
 ```
 
-- [H5模板使用文档](/docs/template-vue2-manage.html)
-- [Vue模板使用文档](/docs/template-node-egg.html)
-- [命令行脚手架使用文档](/docs/template-node-cli.html)
+- [Corgi集中管理工具](/docs/corgi-core.html)
+- [H5模板使用文档](/docs/template-h5.html)
+- [Vue模板使用文档](/docs/template-vue.html)
+
 
 
 ## corgi start

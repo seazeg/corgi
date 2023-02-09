@@ -55,9 +55,9 @@ corgi start example
 
 ```bash
 # 测试打包
-corgi build --env test --siteName <siteName>
+corgi build <siteName> --env test
 # 生产打包
-corgi build --env pro --siteName <siteName>
+corgi build <siteName> --env pro
 ```
 
 ### 自动化部署
