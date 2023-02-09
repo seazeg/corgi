@@ -55,10 +55,10 @@ corgi push <siteName>
 ```
 
 ## .corgirc
-生成的工程中都包含`.corgirc`文件，用来配置当前`corgi`选项
+生成的工程中都包含`.corgirc`文件，用来配置当前`corgi`选项 
 
-```bash
-# mode指定模板模式类型，生成后不要轻易修改
+```json 
+// mode指定模板模式类型，生成后不要轻易修改
 {
     "mode": "h5"
 }
