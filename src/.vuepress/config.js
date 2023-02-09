@@ -1,35 +1,34 @@
 /*
  * @Author       : Evan.G
  * @Date         : 2023-02-09 14:51:20
- * @LastEditTime : 2023-02-09 15:14:56
- * @Description  : 
+ * @LastEditTime : 2023-02-09 17:22:17
+ * @Description  :
  */
-const path = require('path')
-const moment = require('moment')
+const path = require("path");
+const moment = require("moment");
 
-function resolve (dir) {
-  return path.join(__dirname, '../../', dir)
+function resolve(dir) {
+  return path.join(__dirname, "../../", dir);
 }
 
 module.exports = {
-  title: "Web Infrastructure",
-  description:
-    "前端基础建设文档库，包含中后台前端脚手架、组件库、后端脚手架等。",
+  title: "Corgi Integration",
+  description: "集中化工具文档库",
   base: "/",
-  head: [["link", { rel: "icon", href: "/favicon.svg" }]],
+  head: [["link", { rel: "icon", href: "/corgi.svg" }]],
   dest: "./dist",
   port: 9901,
   theme: "antdocs",
   themeConfig: {
-    logo: "/favicon.svg",
+    logo: "/corgi.svg",
     // 顶部导航栏配置
     nav: [
       { text: "主页", link: "/" },
       { text: "使用说明", link: "/guide/introduction" },
-      { text: "Corgi", link: "/docs/wy-cli" },
-      { text: "H5模板", link: "/docs/template-vue2-manage" },
-      { text: "Vue模板", link: "/docs/template-node-egg" },
-      { text: "组件库", link: "/components/quick-start" },
+      { text: "Corgi", link: "/docs/corgi-core" },
+      { text: "H5脚手架", link: "/docs/template-h5" },
+      { text: "Vue脚手架", link: "/docs/template-vue" },
+      { text: "开发说明", link: "/docs/specification" },
     ],
     // 侧边栏设置
     sidebar: {
@@ -42,19 +41,19 @@ module.exports = {
       "/docs/": [
         {
           title: "Corgi",
-          path: "wy-cli",
+          path: "corgi-core",
         },
         {
           title: "H5模板",
-          path: "template-node-egg",
+          path: "template-h5",
         },
         {
           title: "Vue模板",
-          path: "template-node-cli",
+          path: "template-vue",
         },
         {
-          title: "开发规范",
-          path: "v2-style-guide",
+          title: "开发说明",
+          path: "specification",
         },
       ],
     },
