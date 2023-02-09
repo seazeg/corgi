@@ -14,20 +14,20 @@ title: H5项目模板
 ├─ .prettierignore                                  # prettier排除设置
 ├─ .prettierrc                                      # prettier设置
 ├─ README.md                                        # 说明文档
-├─ package.json                 
-├─ pnpm-lock.yaml               
+├─ package.json
+├─ pnpm-lock.yaml
 └─ projects                                         # 项目总目录
    └─ example                                       # 站点目录
       ├─ config.json                                # 站点配置文件
-      └─ src                
+      └─ src
          ├─ fonts                                   # 字体资源
          ├─ libs                                    # 类库资源
-         ├─ pages               
+         ├─ pages
          │  ├─ demo                                 # 页面模块
-         │  │  ├─ demo.js               
-         │  │  ├─ demo.less                 
-         │  │  ├─ demo.shtml                
-         │  │  └─ resourse                            #模块资源目录
+         │  │  ├─ demo.js
+         │  │  ├─ demo.less
+         │  │  ├─ demo.shtml
+         │  │  └─ resourse                           #模块资源目录
          │  └─ public                               # 公用模块
          │     ├─ common.js                         # 公用js
          │     ├─ common.less                       # 公用样式
@@ -41,3 +41,33 @@ title: H5项目模板
 
 ```
 
+## 常用命令
+
+```bash
+# 依赖安装
+pnpm install
+
+# 本地http启动
+corgi start <siteName>
+
+# 本地打包
+corgi build <siteName>
+
+# eslint
+pnpm lint
+
+# stylelint
+pnpm stylelint
+
+```
+
+## 默认类库说明
+
+| 模块             | 功能介绍                                   | 备注                                                                           |
+| ---------------- | ------------------------------------------ | ------------------------------------------------------------------------------ |
+| hopeUI           | 公司内部前端页面 UI 库，包含常用大多数组件 | API 文档地址：[http://seazeg.gitee.io/hopeui/](http://seazeg.gitee.io/hopeui/) |
+| jQuery           | JavaScript 库                              |                                                                                |
+| videojs          | 常用视频组件                               | 根据业务情况取舍版本                                                           |
+| ajax.interceptor | csrf 拦截器                                |                                                                                |
+| trs_spm          | spm 插件                                   |                                                                                |
+| pro_exposure     | 产品曝光插件                               |

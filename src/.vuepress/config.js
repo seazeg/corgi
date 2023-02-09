@@ -1,7 +1,7 @@
 /*
  * @Author       : Evan.G
  * @Date         : 2023-02-09 14:51:20
- * @LastEditTime : 2023-02-09 17:22:17
+ * @LastEditTime : 2023-02-09 17:30:18
  * @Description  :
  */
 const path = require("path");
@@ -44,11 +44,11 @@ module.exports = {
           path: "corgi-core",
         },
         {
-          title: "H5模板",
+          title: "H5脚手架",
           path: "template-h5",
         },
         {
-          title: "Vue模板",
+          title: "Vue脚手架",
           path: "template-vue",
         },
         {
