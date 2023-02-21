@@ -17,11 +17,6 @@ function createVueSidebar() {
       title: "指南",
       children: [
         {
-          title: "介绍",
-          collapsable: true,
-          path: "/docs/template-vue/guide/introduction",
-        },
-        {
           title: "开始",
           path: "/docs/template-vue/guide/",
         },
@@ -147,10 +142,10 @@ function createVueSidebar() {
           title: "Table",
           path: "/docs/template-vue/components/table",
         },
-        {
-          title: "PopConfirmButton",
-          path: "/docs/template-vue/components/pop-confirm-button",
-        },
+        // {
+        //   title: "PopConfirmButton",
+        //   path: "/docs/template-vue/components/pop-confirm-button",
+        // },
         {
           title: "CollapseContainer",
           path: "/docs/template-vue/components/collapse-container",
@@ -176,10 +171,10 @@ function createVueSidebar() {
           path: "/docs/template-vue/components/count-down",
         },
 
-        {
-          title: "ClickOutSide",
-          path: "/docs/template-vue/components/click-out-side",
-        },
+        // {
+        //   title: "ClickOutSide",
+        //   path: "/docs/template-vue/components/click-out-side",
+        // },
         {
           title: "CountTo",
           path: "/docs/template-vue/components/count-to",
@@ -200,10 +195,10 @@ function createVueSidebar() {
           title: "Modal",
           path: "/docs/template-vue/components/modal",
         },
-        {
-          title: "FlowChart",
-          path: "/docs/template-vue/components/flow-chart",
-        },
+        // {
+        //   title: "FlowChart",
+        //   path: "/docs/template-vue/components/flow-chart",
+        // },
         {
           title: "Upload",
           path: "/docs/template-vue/components/upload",
@@ -232,41 +227,41 @@ function createVueSidebar() {
           title: "Tinymce",
           path: "/docs/template-vue/components/tinymce",
         },
-        {
-          title: "Time",
-          path: "/docs/template-vue/components/time",
-        },
+        // {
+        //   title: "Time",
+        //   path: "/docs/template-vue/components/time",
+        // },
         {
           title: "StrengthMeter",
           path: "/docs/template-vue/components/strength-meter",
         },
-        {
-          title: "Verify",
-          path: "/docs/template-vue/components/verify",
-        },
+        // {
+        //   title: "Verify",
+        //   path: "/docs/template-vue/components/verify",
+        // },
         {
           title: "Transition",
           path: "/docs/template-vue/components/transition",
         },
-        {
-          title: "VirtualScroll",
-          path: "/docs/template-vue/components/virtual-scroll",
-        },
+        // {
+        //   title: "VirtualScroll",
+        //   path: "/docs/template-vue/components/virtual-scroll",
+        // },
       ],
     },
-    {
-      title: "函数式组件",
-      children: [
-        {
-          title: "ContextMenu",
-          path: "/docs/template-vue/components/functional/context-menu",
-        },
-        {
-          title: "Loading",
-          path: "/docs/template-vue/components/functional/loading",
-        },
-      ],
-    },
+    // {
+    //   title: "函数式组件",
+    //   children: [
+    //     {
+    //       title: "ContextMenu",
+    //       path: "/docs/template-vue/components/functional/context-menu",
+    //     },
+    //     {
+    //       title: "Loading",
+    //       path: "/docs/template-vue/components/functional/loading",
+    //     },
+    //   ],
+    // },
   ];
 }
 
