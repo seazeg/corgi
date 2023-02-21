@@ -11,6 +11,265 @@ function resolve(dir) {
   return path.join(__dirname, "../../", dir);
 }
 
+function createVueSidebar() {
+  return [
+    {
+      title: "指南",
+      children: [
+        {
+          title: "介绍",
+          collapsable: true,
+          path: "/docs/template-vue/guide/introduction",
+        },
+        {
+          title: "开始",
+          path: "/docs/template-vue/guide/",
+        },
+        {
+          title: "项目配置",
+          path: "/docs/template-vue/guide/settings",
+        },
+        {
+          title: "路由",
+          path: "/docs/template-vue/guide/router",
+        },
+        {
+          title: "菜单",
+          path: "/docs/template-vue/guide/menu",
+        },
+        {
+          title: "权限",
+          path: "/docs/template-vue/guide/auth",
+        },
+        {
+          title: "Mock&联调",
+          path: "/docs/template-vue/guide/mock",
+        },
+        {
+          title: "组件注册",
+          path: "/docs/template-vue/guide/component",
+        },
+        {
+          title: "样式",
+          path: "/docs/template-vue/guide/design",
+        },
+        {
+          title: "构建&部署",
+          path: "/docs/template-vue/guide/deploy",
+        },
+      ],
+    },
+    {
+      title: "深入",
+      children: [
+        {
+          title: "跨域处理",
+          path: "/docs/template-vue/dep/cors",
+        },
+        {
+          title: "图标",
+          path: "/docs/template-vue/dep/icon",
+        },
+        {
+          title: "国际化",
+          path: "/docs/template-vue/dep/i18n",
+        },
+        {
+          title: "项目规范",
+          path: "/docs/template-vue/dep/lint",
+        },
+        {
+          title: "黑暗主题",
+          path: "/docs/template-vue/dep/dark",
+        },
+      ],
+    },
+    {
+      title: "其他",
+      collapsable: true, // 可选的, 默认值是 true,
+      children: [
+        {
+          title: "常见问题",
+          path: "/docs/template-vue/other/faq",
+        },
+        {
+          title: "常见疑点",
+          path: "/docs/template-vue/other/doubt",
+        },
+        {
+          title: "测试服务",
+          path: "/docs/template-vue/other/server",
+        },
+      ],
+    },
+    // {
+    //   title: "组件",
+    //   children: [
+    //     {
+    //       title: "前言",
+    //       path: "/docs/template-vue/components/introduction",
+    //     },
+    //   ],
+    // },
+    // {
+    //   title: "全局组件",
+    //   children: [
+    //     {
+    //       title: "Button",
+    //       path: "/docs/template-vue/components/glob/button",
+    //     },
+    //   ],
+    // },
+    {
+      title: "常用组件",
+      children: [
+        {
+          title: "Basic",
+          path: "/docs/template-vue/components/basic",
+        },
+        {
+          title: "Page",
+          path: "/docs/template-vue/components/page",
+        },
+        {
+          title: "Icon",
+          path: "/docs/template-vue/components/icon",
+        },
+        {
+          title: "Authority",
+          path: "/docs/template-vue/components/auth",
+        },
+        {
+          title: "Form",
+          path: "/docs/template-vue/components/form",
+        },
+        {
+          title: "Table",
+          path: "/docs/template-vue/components/table",
+        },
+        {
+          title: "PopConfirmButton",
+          path: "/docs/template-vue/components/pop-confirm-button",
+        },
+        {
+          title: "CollapseContainer",
+          path: "/docs/template-vue/components/collapse-container",
+        },
+        {
+          title: "ScrollContainer",
+          path: "/docs/template-vue/components/scroll-container",
+        },
+        {
+          title: "LazyContainer",
+          path: "/docs/template-vue/components/lazy-container",
+        },
+        {
+          title: "CodeEditor",
+          path: "/docs/template-vue/components/code-editor",
+        },
+        {
+          title: "JsonPreview",
+          path: "/docs/template-vue/components/json-preview",
+        },
+        {
+          title: "CountDown",
+          path: "/docs/template-vue/components/count-down",
+        },
+
+        {
+          title: "ClickOutSide",
+          path: "/docs/template-vue/components/click-out-side",
+        },
+        {
+          title: "CountTo",
+          path: "/docs/template-vue/components/count-to",
+        },
+        {
+          title: "Cropper",
+          path: "/docs/template-vue/components/cropper",
+        },
+        {
+          title: "Description",
+          path: "/docs/template-vue/components/desc",
+        },
+        {
+          title: "Drawer",
+          path: "/docs/template-vue/components/drawer",
+        },
+        {
+          title: "Modal",
+          path: "/docs/template-vue/components/modal",
+        },
+        {
+          title: "FlowChart",
+          path: "/docs/template-vue/components/flow-chart",
+        },
+        {
+          title: "Upload",
+          path: "/docs/template-vue/components/upload",
+        },
+        {
+          title: "Tree",
+          path: "/docs/template-vue/components/tree",
+        },
+        {
+          title: "Excel",
+          path: "/docs/template-vue/components/excel",
+        },
+        {
+          title: "Qrcode",
+          path: "/docs/template-vue/components/qrcode",
+        },
+        {
+          title: "Markdown",
+          path: "/docs/template-vue/components/markdown",
+        },
+        {
+          title: "Loading",
+          path: "/docs/template-vue/components/loading",
+        },
+        {
+          title: "Tinymce",
+          path: "/docs/template-vue/components/tinymce",
+        },
+        {
+          title: "Time",
+          path: "/docs/template-vue/components/time",
+        },
+        {
+          title: "StrengthMeter",
+          path: "/docs/template-vue/components/strength-meter",
+        },
+        {
+          title: "Verify",
+          path: "/docs/template-vue/components/verify",
+        },
+        {
+          title: "Transition",
+          path: "/docs/template-vue/components/transition",
+        },
+        {
+          title: "VirtualScroll",
+          path: "/docs/template-vue/components/virtual-scroll",
+        },
+      ],
+    },
+    {
+      title: "函数式组件",
+      children: [
+        {
+          title: "ContextMenu",
+          path: "/docs/template-vue/components/functional/context-menu",
+        },
+        {
+          title: "Loading",
+          path: "/docs/template-vue/components/functional/loading",
+        },
+      ],
+    },
+  ];
+}
+
 module.exports = {
   title: "Corgi Integration",
   description: "集中化工具文档库",
@@ -27,7 +286,8 @@ module.exports = {
       { text: "使用说明", link: "/guide/introduction" },
       { text: "Corgi", link: "/docs/corgi-core" },
       { text: "H5脚手架", link: "/docs/template-h5" },
-      { text: "Vue脚手架", link: "/docs/template-vue" },
+      // { text: "Vue脚手架", link: "/docs/template-vue" },
+      { text: "Vue脚手架", link: "/docs/template-vue/guide/introduction" },
       { text: "开发说明", link: "/docs/specification" },
     ],
     // 侧边栏设置
@@ -49,7 +309,7 @@ module.exports = {
         },
         {
           title: "Vue脚手架",
-          path: "template-vue",
+          children: createVueSidebar(),
         },
         {
           title: "开发说明",
