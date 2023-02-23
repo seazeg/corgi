@@ -1,7 +1,7 @@
 /*
  * @Author       : Evan.G
  * @Date         : 2023-02-09 14:51:20
- * @LastEditTime : 2023-02-09 17:30:18
+ * @LastEditTime : 2023-02-23 18:13:13
  * @Description  :
  */
 const path = require("path");
@@ -270,7 +270,7 @@ module.exports = {
   description: "集中化工具文档库",
   base: "/",
   head: [["link", { rel: "icon", href: "/corgi.svg" }]],
-  dest: "./dist",
+  dest: "./docs",
   port: 9901,
   theme: "antdocs",
   themeConfig: {

@@ -43,35 +43,14 @@
     "> 1%",
     "last 2 versions"
   ],
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "src/*.{js,vue}": [
-      "vue-cli-service lint",
-      "git add"
-    ]
-  },
   "engines": {
     "node": "16"
   },
   "license": "MIT",
-  "homepage": "https://github.com/wytxer/docs-web-infrastructure/#readme",
   "keywords": [
     "docs",
     "antdv kit docs",
     "scaffold docs",
     "web infrastructure"
-  ],
-  "author": {
-    "name": "wytxer",
-    "url": "https://github.com/wytxer"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:wytxer/docs-web-infrastructure.git"
-  },
-  "bugs": {
-    "url": "https://github.com/wytxer/docs-web-infrastructure/issues"
-  }
+  ]
 }
