@@ -96,8 +96,6 @@ VITE_PUBLIC_PATH=/
 # 可选: gzip | brotli | none
 # 也可以有多个, 例如 ‘gzip’|'brotli',这样会同时生成 .gz和.br文件
 VITE_BUILD_COMPRESS = 'gzip'
-# 打包是否压缩图片
-VITE_USE_IMAGEMIN = false
 # 打包是否开启pwa功能
 VITE_USE_PWA = false
 ```
