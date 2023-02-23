@@ -75,7 +75,7 @@ VITE_GLOB_API_URL_PREFIX=
 
 :::
 
-### .env.production
+### .env.prod
 
 生产环境适用
 

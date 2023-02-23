@@ -44,7 +44,8 @@ corgi start <siteName>
 
 ```bash
 # 指定 项目 目录构建服务（初始化时候目录名）
-corgi build <siteName>
+corgi build <siteName> --env test
+corgi build <siteName> --env prod
 ```
 
 ## corgi push

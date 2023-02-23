@@ -12,7 +12,7 @@ yarn build
 
 ### 旧版浏览器兼容
 
-在 **.env.production** 内
+在 **.env.prod** 内
 
 设置 `VITE_LEGACY=true` 即可打包出兼容旧版浏览器的代码
 
@@ -167,7 +167,7 @@ location / {
 
 ```
 
-**部署时可能会发现资源路径不对，只需要修改`.env.production`文件即可。**
+**部署时可能会发现资源路径不对，只需要修改`.env.prod`文件即可。**
 
 ```bash
 # 根据自己路径来配置更改
@@ -222,7 +222,7 @@ server {
 1. 首先需要在打包的时候更改配置
 
 ```bash
-# 在.env.production内，配置子目录路径
+# 在.env.prod内，配置子目录路径
 VITE_PUBLIC_PATH = /sub/
 ```
 
@@ -246,7 +246,7 @@ server {
 1. 配置前端项目接口地址
 
 ```bash
-# 在.env.production内，配置接口地址
+# 在.env.prod内，配置接口地址
 VITE_GLOB_API_URL=/api
 ```
 

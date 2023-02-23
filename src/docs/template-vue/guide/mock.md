@@ -98,7 +98,7 @@ server: {
 
 ## 生产环境
 
-生产环境接口地址在项目根目录下 .env.production 文件配置。
+生产环境接口地址在项目根目录下 .env.prod 文件配置。
 
 生产环境接口地址值需要修改 **VITE_GLOB_API_URL**，如果出现跨域问题，可以使用 nginx 或者后台开启 cors 进行处理
 
@@ -612,7 +612,7 @@ export default [
 
 :::
 
-1. 修改 .env.production 文件内的 `VITE_USE_MOCK` 的值为 true
+1. 修改 .env.prod 文件内的 `VITE_USE_MOCK` 的值为 true
 
 ```ts
 VITE_USE_MOCK = true;

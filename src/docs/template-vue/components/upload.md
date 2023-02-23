@@ -29,7 +29,7 @@
 
 ## Config
 
-`.env.development` 和 `.env.production` 配置开发和生产的文件上传地址
+`.env.development` 和 `.env.prod` 配置开发和生产的文件上传地址
 
 ```bash
 # .env.development
@@ -39,7 +39,7 @@ VITE_PROXY=[["/upload","http://localhost:3001/upload"]]
 # 如果没有跨域问题，则直接使用真实上传地址
 VITE_GLOB_UPLOAD_URL=/upload
 
-# .env.production
+# .env.prod
 VITE_GLOB_UPLOAD_URL=/upload
 
 ```
