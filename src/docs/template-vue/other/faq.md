@@ -34,36 +34,6 @@ You are using a whole package of antd, please use https://www.npmjs.com/package/
 
 菜单必须和路由匹配才会显示在界面上，所以得确保菜单和对应的路由存在即可显示.
 
-## imagemin 依赖安装失败
-
-由于 imagemin 在国内安装困难，提供以下几个解决方案：
-
-1. 使用 yarn 在 package.json 内配置（推荐，项目内已集成，前提是必须使用 yarn）
-
-```json
-"resolutions": {
-  "bin-wrapper": "npm:bin-wrapper-china"
-}
-```
-
-2. 使用 npm,在电脑 host 文件加上如下配置即可
-
-```bash
-199.232.4.133 raw.githubusercontent.com
-```
-
-## 使用 yarn 安装 imagemin 依赖安装失败
-
-如果使用 yarn 还是不能安装依赖，可以将图片压缩功能移除，移除方法如下：
-
-- 在 `package.json` 内删除 `vite-plugin-imagemin` 这个依赖。这会导致图片没有压缩，但是可以手动到在线网站进行压缩。这里推荐[tinypng](https://tinypng.com/)
-- 2. 注释 `vite-plugin-imagemin` 插件引用
-
-```ts
-import { configImageminPlugin } from "./imagemin";
-VITE_USE_IMAGEMIN && vitePlugins.push(configImageminPlugin());
-```
-
 ## 在 Linux 内依赖安装失败
 
 如果执行 `yarn install` 会出现以下错误：
@@ -72,8 +42,6 @@ VITE_USE_IMAGEMIN && vitePlugins.push(configImageminPlugin());
 gifsicle pre-build test failed
 compiling from source
 ```
-
-可能是 linux 服务器需要配置下环境，`imagemin` 这个会导致依赖安装失败。
 
 这里以`Centos`为例
 
