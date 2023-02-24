@@ -5,10 +5,13 @@
 项目开发完成之后，执行以下命令进行构建
 
 ```bash
-yarn build
+# 生产构建
+corgi build . --env prod
+# 测试构建
+corgi build . --env test
 ```
 
-构建打包成功之后，会在根目录生成 dist 文件夹，里面就是构建打包好的文件
+构建打包成功之后，会在根目录生成 build 文件夹，里面就是构建打包好的文件
 
 ### 旧版浏览器兼容
 
@@ -20,33 +23,6 @@ yarn build
 VITE_LEGACY = true
 ```
 
-### 预览
-
-发布之前可以在本地进行预览，有多种方式，这里介绍两种
-
-**不能直接打开构建后的 html 文件**
-
-- 使用项目自定的命令进行预览(推荐)
-
-```bash
-# 先打包在进行预览
-yarn preview
-# 直接预览本地 dist 文件目录
-yarn preview:dist
-```
-
-- 本地服务器预览(通过 live-server)
-
-```bash
-# 1.全局安装live-server
-yarn global add live-server
-# 2. 进入打包的后目录
-cd ./dist
-# 本地预览，默认端口8080
-live-server
-# 指定端口
-live-server --port 9000
-```
 
 ### 分析构建文件体积
 

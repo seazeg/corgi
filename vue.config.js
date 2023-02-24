@@ -15,5 +15,5 @@ module.exports = {
         //   })
         // config.module.rule('eslint').uses.clear()
         // config.module.rule('eslint-loader').uses.clear()
-    },
+    }
 };

@@ -228,10 +228,6 @@ const IFrame = () => import('/@/views/sys/iframe/FrameBlank.vue');
 }
 ```
 
-## 图标
-
-这里的 `icon` 配置，会同步到 **菜单**（icon 的值可以查看[此处](../components/icon.md)）。
-
 ## 新增路由
 
 ### 如何新增一个路由模块
