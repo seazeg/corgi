@@ -1,5 +1,5 @@
 ---
-title: WY CLI
+title: Corgi
 ---
 
 ## 介绍
