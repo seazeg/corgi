@@ -84,7 +84,6 @@
   "lint:prettier": "prettier --write --loglevel warn \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
   # 执行 stylelint 格式化
   "lint:stylelint": "stylelint --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/",
-  "lint:lint-staged": "lint-staged",
   # 重新安装husky
   "prepare": "rm -rf ./husky;husky install;husky add .husky/pre-commit \"npx lint-staged --allow-empty\";husky add .husky/commit-msg 'npx --no -- commitlint --edit \"$1\"'"
 },
