@@ -14,7 +14,7 @@ title: 开发规范
 
 ::: tip 注意
 
-保证依赖兼容性，基础`node`版本采用 `16.13.0`，
+保证依赖兼容性，基础`node`版本采用 `16.19.1`，
 通过安装`nvm`切换 `node` 版本来兼容历史项目
 
 包地址：[nvm 安装包-windows](https://github.com/coreybutler/nvm-windows/releases)
