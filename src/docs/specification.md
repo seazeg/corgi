@@ -91,7 +91,7 @@ corgi start example
 # 测试打包
 corgi build <siteName> --env test
 # 生产打包
-corgi build <siteName> --env pro
+corgi build <siteName> --env prod
 ```
 
 ### 自动化部署
@@ -102,7 +102,7 @@ corgi build <siteName> --env pro
 # 测试
 corgi push --env test
 # 生产
-corgi push --env pro
+corgi push --env prod
 ```
 
 ## 使用规范
