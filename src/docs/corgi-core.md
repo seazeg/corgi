@@ -53,7 +53,8 @@ corgi build <siteName> --env prod
 
 ```bash
 # 指定 项目 目录推送服务（初始化时候目录名）
-corgi push <siteName>
+corgi push <siteName> --env test
+corgi push <siteName> --env prod
 ```
 
 ## .corgirc
