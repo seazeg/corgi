@@ -30,24 +30,29 @@ nvm use <node.Verison>
 安装`nrm`源切换工具
 
 ```bash
-#安装源切换工具
+# 安装源切换工具
 npm install -g nrm
-#切换至taobaoi源
+# 修复nrm缺少open问题
+npm install -g nrm open@8.4.2 -save
+
+# 切换至taobaoi源
 nrm use taobao
 ```
 
 安装`pnpm`包管理工具
 
 ```bash
-#全局安装pnpm包管理
+# 全局安装pnpm包管理
 npm install -g pnpm
 ```
 
-进入根目录后执行
+安装`corgi`集中管理工具
 
 ```bash
-#安装依赖
-pnpm install
+# 全局安装pnpm包管理
+npm install -g corgi-biu
+# 升级方式
+npm update -g corgi-biu
 ```
 
 ## 工具配置
@@ -79,7 +84,9 @@ pnpm install
 通过 `corgi` 启动 http 静态资源服务
 
 ```bash
-# corgi start <siteName>
+# 基本格式
+corgi start <siteName>
+# 例子
 corgi start example
 ```
 
@@ -133,7 +140,11 @@ corgi push --env prod
 -   `wip` 开发中
 
 ```bash
-git commit -m "[type-name]: [subject-name]"
+# 基本格式
+git commit -m "<type-name>: <subject-name>"
+# 例子
+git commit -m "feat: 新增产品列表页相关模块"
+
 ```
 
 ### H5 命名规范
@@ -145,5 +156,6 @@ git commit -m "[type-name]: [subject-name]"
 -   resource 中存放当前页面模块所引用的资源，其中包括各类型图片(jpg、png、gif、svg)，媒体文件(mp4、mov、m3u8)
 
 -   public 目录中只能存放公用资源，包括公用 js、公用 less、公用头尾和头尾资源的 shtml 以及 resource 中的公用图片以及媒体文件
+d
 
-### Vue 命名规范
+-   待补充
