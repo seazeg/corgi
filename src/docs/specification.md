@@ -54,8 +54,7 @@ npm install -g corgi-biu
 npm update -g corgi-biu
 ```
 
-
-进入项目中后，执行以下命令
+新项目或者每次`clone`项目后，进入项目中，执行以下命令
 
 ```bash
 # 安装项目依赖
