@@ -54,11 +54,18 @@ npm install -g corgi-biu
 npm update -g corgi-biu
 ```
 
-新项目或者每次`clone`项目后，进入项目中，执行以下命令
+新初始化项目或者`clone`项目后，进入项目中，执行以下命令
 
 ```bash
 # 安装项目依赖
 pnpm install
+```
+
+::: tip 注意
+依赖安装完成后，必须执行以下命令
+:::
+
+```bash
 # 部署husky钩子
 pnpm husky
 ```
