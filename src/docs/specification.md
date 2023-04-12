@@ -12,6 +12,7 @@ title: 开发规范
 
 ## 环境准备
 
+通过`nvm`安装和切换指定 `node` 版本
 ::: tip 注意
 
 保证依赖兼容性，基础`node`版本采用 `16.19.1`，
@@ -20,21 +21,19 @@ title: 开发规范
 包地址：[nvm 安装包-windows](https://github.com/coreybutler/nvm-windows/releases)
 :::
 
-通过`nvm`安装和切换指定 `node` 版本
-
 ```bash
 nvm install <node.Verison>
 nvm use <node.Verison>
 ```
 
 安装`nrm`源切换工具
+::: tip 注意
+nrm 安装完成后，可能会出现 open 依赖未找到问题，需要再次执行`npm install -g nrm open@8.4.2 -save`
+:::
 
 ```bash
 # 安装源切换工具
 npm install -g nrm
-# 修复nrm缺少open问题
-npm install -g nrm open@8.4.2 -save
-
 # 切换至taobaoi源
 nrm use taobao
 ```
@@ -156,6 +155,19 @@ git commit -m "feat: 新增产品列表页相关模块"
 -   resource 中存放当前页面模块所引用的资源，其中包括各类型图片(jpg、png、gif、svg)，媒体文件(mp4、mov、m3u8)
 
 -   public 目录中只能存放公用资源，包括公用 js、公用 less、公用头尾和头尾资源的 shtml 以及 resource 中的公用图片以及媒体文件
-d
+    d
 
 -   待补充
+
+### 注意事项
+
+::: tip 注意
+当定义全局变量在公用 js，并且这个变量会在某些 js 中使用，或者一些第三方插件变量的初始化，会导致`eslint` 会提示 `not defined`错误
+
+解决方案：
+
+    1.将变量放到`common.js`中的`interfaceMap`中做统一管理
+
+    2.将第三方插件变量在 eslintrc.js 的 global 中加入
+
+:::
