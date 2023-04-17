@@ -74,7 +74,7 @@ ln -s /data/TRS/node-v16.19.1-linux-x64/bin/corgi /usr/bin/corgi
 corgi -V
 ```
 
-## `jenkins` 调用方式
+## `jenkins` 配置
 
 在各前端项目的`jenkins`配置下 `shell` 处加入
 
