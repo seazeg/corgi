@@ -1,7 +1,7 @@
 /*
  * @Author       : Evan.G
  * @Date         : 2023-02-09 14:51:20
- * @LastEditTime : 2023-02-24 09:36:46
+ * @LastEditTime : 2023-04-17 11:05:38
  * @Description  :
  */
 const path = require("path");
@@ -301,6 +301,16 @@ module.exports = {
                 {
                     title: "Corgi",
                     path: "corgi-core",
+                    children: [
+                        {
+                            title: "使用指南",
+                            path: "corgi-core",
+                        },
+                        {
+                            title: "部署说明",
+                            path: "deployment",
+                        },
+                    ],
                 },
                 {
                     title: "H5脚手架",

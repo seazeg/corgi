@@ -26,7 +26,7 @@ nvm install <node.Verison>
 nvm use <node.Verison>
 ```
 
-安装`nrm`源切换工具
+安装`nrm`镜像源切换工具
 ::: tip 注意
 nrm 安装完成后，可能会出现 open 依赖未找到问题，需要再次执行`npm install -g nrm open@8.4.2 -save`
 :::
@@ -38,7 +38,7 @@ npm install -g nrm
 nrm use taobao
 ```
 
-安装`pnpm`包管理工具
+安装`pnpm`依赖包管理工具
 
 ```bash
 # 全局安装pnpm包管理
