@@ -61,15 +61,6 @@ npm update -g corgi-biu
 pnpm install
 ```
 
-::: tip 注意
-依赖安装完成后，必须执行以下命令
-:::
-
-```bash
-# 部署husky钩子
-pnpm husky
-```
-
 ## 工具配置
 
 使用的 IDE 是[vscode](https://code.visualstudio.com/)，以下插件根据实际情况安装
