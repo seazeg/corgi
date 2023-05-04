@@ -68,8 +68,9 @@ pnpm stylelint
 | hopeUI           | 公司内部前端页面 UI 库，包含常用大多数组件 | API 文档地址：[http://seazeg.gitee.io/hopeui/](http://seazeg.gitee.io/hopeui/) |
 | jQuery           | JavaScript 库                              | 根据业务情况取舍版本                                                           |
 | videojs          | 常用视频组件                               | 根据业务情况取舍版本                                                           |
-| ajax.interceptor | csrf 拦截组件器                                |                                                                                |
+| ajax.interceptor | csrf 拦截组件器                            |                                                                                |
 | trs_spm          | spm 插件                                   |                                                                                |
 | pro_exposure     | 产品曝光插件                               |                                                                                |
 | jsmpeg           | 视频组件                                   | 适用于背景视频 video 转 canvas                                                 |
 | clipboard        | 复制内容到剪贴板组件                       |                                                                                |
+| checkPageNested  | 当页面被第三方嵌套时的弹层提示件           | by:孙永花                                                                      |
