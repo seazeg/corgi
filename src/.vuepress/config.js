@@ -1,7 +1,7 @@
 /*
  * @Author       : Evan.G
  * @Date         : 2023-02-09 14:51:20
- * @LastEditTime : 2023-04-17 11:05:38
+ * @LastEditTime : 2024-05-20 16:11:09
  * @Description  :
  */
 const path = require("path");
@@ -268,7 +268,7 @@ function createVueSidebar() {
 module.exports = {
     title: "Corgi Integration",
     description: "集中化工具文档库",
-    base: "/corgi-instructions/",
+    base: "/corgi/",
     head: [["link", { rel: "icon", href: "/corgi.svg" }]],
     dest: "./docs",
     port: 9901,
