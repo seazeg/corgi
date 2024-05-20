@@ -15,4 +15,4 @@ npm i pnpm -g
 - [Corgi 集中管理工具](/docs/corgi-core.html)
 - [H5 模板使用文档](/docs/template-h5.html)
 - [Vue 模板使用文档](/docs/template-vue/guide/)
-- [资源包 模板使用文档](/docs/template-resource.html)
+- [Pkg资源包 模板使用文档](/docs/template-resource.html)

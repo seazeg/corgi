@@ -29,7 +29,6 @@ title: Pkg资源包项目模板
 # 初始化,选择pkg资源包模板
 corgi init
 
-
 # 依赖安装
 pnpm install
 
