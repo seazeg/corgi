@@ -6,7 +6,6 @@ title: Corgi
 
 多模板多功能的集成工具
 
-
 ## 安装
 
 ```bash
@@ -22,13 +21,13 @@ npm i corgi-biu -g
 ```bash
 ◯ H5（jQuery + gulp + less + hopeUI）
 ◯ Vue（Vue.js 3.x + Vue Router + vite + axios + less + pinia + ant-design-vue）
+◯ Pkg资源包（jQuery + gulp + less)
 ```
 
-- [Corgi集中管理工具](/docs/corgi-core.html)
-- [H5模板使用文档](/docs/template-h5.html)
-- [Vue模板使用文档](/docs/template-vue.html)
-
-
+-   [Corgi 集中管理工具](/docs/corgi-core.html)
+-   [H5 模板使用文档](/docs/template-h5.html)
+-   [Vue 模板使用文档](/docs/template-vue.html)
+-   [资源包 模板使用文档](/docs/template-resource.html)
 
 ## corgi start
 
@@ -40,6 +39,7 @@ corgi start <siteName>
 ```
 
 ## corgi build
+
 打包构建代码
 
 ```bash
@@ -49,6 +49,7 @@ corgi build <siteName> --env prod
 ```
 
 ## corgi push
+
 配合`jenkins`和`git`将改动的内容提交到服务器上
 
 ```bash
@@ -57,10 +58,21 @@ corgi push <siteName> --env test
 corgi push <siteName> --env prod
 ```
 
-## .corgirc
-生成的工程中都包含`.corgirc`文件，用来配置当前`corgi`选项 
+## corgi release
 
-```json 
+配合 push 命令，将改动项的所有关联资源，动态修改其版本号
+
+```bash
+# 指定 项目 目录推送服务（初始化时候目录名）
+corgi release <siteName> --env test
+corgi release <siteName> --env prod
+```
+
+## .corgirc
+
+生成的工程中都包含`.corgirc`文件，用来配置当前`corgi`选项
+
+```json
 // mode指定模板模式类型，生成后不要轻易修改
 {
     "mode": "h5"

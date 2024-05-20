@@ -1,11 +1,12 @@
 /*
  * @Author       : Evan.G
  * @Date         : 2023-02-09 14:51:20
- * @LastEditTime : 2024-05-20 16:11:09
+ * @LastEditTime : 2024-05-20 16:55:03
  * @Description  :
  */
 const path = require("path");
 const moment = require("moment");
+const { resourceUsage } = require("process");
 
 function resolve(dir) {
     return path.join(__dirname, "../../", dir);
@@ -282,8 +283,8 @@ module.exports = {
             { text: "开发说明", link: "/docs/specification" },
             { text: "Corgi", link: "/docs/corgi-core" },
             { text: "H5脚手架", link: "/docs/template-h5" },
-            // { text: "Vue脚手架", link: "/docs/template-vue" },
             { text: "Vue脚手架", link: "/docs/template-vue/guide/introduction" },
+            { text: "Pkg资源包脚手架", link: "/docs/template-resource" },
         ],
         // 侧边栏设置
         sidebar: {
@@ -319,6 +320,10 @@ module.exports = {
                 {
                     title: "Vue脚手架",
                     children: createVueSidebar(),
+                },
+                {
+                    title: "Pkg资源包脚手架",
+                    path: "template-resource",
                 },
             ],
         },
