@@ -48,4 +48,4 @@ corgi build pkg --env test
 corgi build pkg --env prod
 ```
 
-::: tip 生成的 dist 目录可直接打包上传
+::: tip build 目录可直接打包上传
